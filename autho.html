@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="authostyle.css" media="screen">
+	<title>Document</title>
+</head>
+<body style="font-family: Verdana, Helvetica, Arial, sans-serif;">
+	<form method="POST" action="php/authorization.php">
+  <div class="container">
+    <h1 style="text-align: center;">Авторизация</h1>
+    <p>Заполните эту форму, чтобы авторизоваться</p>
+    <hr>
+
+    <label for="email"><b>Логин</b></label>
+    <input type="text" placeholder="Логин" name="login" required>
+
+    <label for="psw"><b>Пароль</b></label>
+    <input type="password" placeholder="Пароль" name="psw" required>
+    <hr>
+    <button type="submit" class="authorbtn">Авторизоваться</button>
+  </div>
+  <a class="back" href="javascript:history.back()">Вернуться назад</a>
+</body>
+</html>

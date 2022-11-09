@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="regstyle.css" media="screen">
+  <title>Document</title>
+</head>
+<body style="font-family: Verdana, Helvetica, Arial, sans-serif;">
+  <form action="check.php" method="POST">
+  <div class="container">
+    <h1 style="text-align: center;">Регистрация</h1>
+    <p>Заполните эту форму, чтобы создать учетную запись</p>
+    <hr>
+
+    <label for="email"><b>ФИО</b></label>
+    <input type="text" placeholder="ФИО" name="Name" required>
+
+    <label for="email"><b>Логин</b></label>
+    <input type="text" placeholder="Логин" name="Login" required>
+
+    <label for="email"><b>Почта</b></label>
+    <input type="text" placeholder="Email" name="Email" required>
+
+    <label for="password"><b>Пароль</b></label>
+    <input type="password" placeholder="Пароль" name="Password" required>
+
+    <label for="psw-repeat"><b>Повторите пароль</b></label>
+    <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+    <hr>
+
+    <p>Создавая аккаунт, вы соглашаетесь с<a href="confiden.html">условиями конфиденциальности</a></p>
+    <button type="submit" class="registerbtn">Зарегистрироваться</button>
+  </div>
+
+  <div class="container signin">
+    <p>Уже есть аккаунт?<a href="autho.html">Авторизоваться</a></p>
+  </div>
+</form>
+<a class="back" href="javascript:history.back()">Вернуться назад</a>
+</body>
+</html>
